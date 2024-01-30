@@ -22,119 +22,113 @@ class _HomeScreenViewState extends State<HomeScreenView> {
   }
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: GetBuilder<AuthController>(
-        builder: (authController) {
-          return Stack(clipBehavior: Clip.none,
-            children: [
-              SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Container(transform: Matrix4.translationValues(-40, -40, 0),
-                      height: Get.width * 1.2, width: Get.width * 1.2, decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(500),
-                          border: Border.all(color: Theme.of(context).hintColor.withOpacity(.5), width: 1)))),
+    return  RefreshIndicator(
+      onRefresh:() async{
+        Get.find<AuthController>().getProfileInfo();
+        Get.find<AuthController>().getOpenTrades();
+      },
+      child: Scaffold(
+        backgroundColor: Theme.of(context).primaryColor,
+        body: GetBuilder<AuthController>(
+          builder: (authController) {
+            return SingleChildScrollView(
+              child: Column(children: [
 
-              Padding(padding: const EdgeInsets.all(60),
-                  child: Container(height: Get.width/1.5 , width: Get.width/1.5 , decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(500),
-                      border: Border.all(color: Theme.of(context).hintColor.withOpacity(.125), width: 2)))),
-              Column(children: [
+                const SizedBox(height: 50),
+                Padding(
+                  padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                  child: Row(children: [
+                    const Spacer(),
+                    InkWell(onTap: ()=> Get.find<AuthController>().clearSharedData(),
+                      child: Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                          child: Text("LogOut", style: textRegular.copyWith(color: Theme.of(context).cardColor),)),
+                    )
+                  ],),
+                ),
+                SizedBox(height: 240,
+                  child: Column(crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(authController.profileModel?.name??"",
+                        style: textRegular.copyWith(fontSize: Dimensions.fontSizeExtraLarge, color: Theme.of(context).cardColor),),
+                      Text(authController.profileModel?.phone??'', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
+                      Text(authController.profileModel?.address??'', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
+                      Text(authController.profileModel?.city??'', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
+                      Text(authController.profileModel?.country??'', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
 
-
-                SizedBox(height: 300,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 100.0),
-                    child: Column(crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text('${authController.profileModel?.name}',
-                          style: textRegular.copyWith(fontSize: Dimensions.fontSizeExtraLarge, color: Theme.of(context).cardColor),),
-                        Text('${authController.profileModel?.phone}', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
-                        Text('${authController.profileModel?.address}', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
-                        Text('${authController.profileModel?.city}', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
-                        Text('${authController.profileModel?.country}', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
-
-                        Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
-                          decoration: BoxDecoration(
-                              color: Theme.of(context).cardColor,
-                              borderRadius: BorderRadius.circular(5),
-                              boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.5), blurRadius: 1, spreadRadius: 1, offset: const Offset(1,1))]
-                          ),
-                          child: Text("Balance : ${authController.profileModel?.balance??0}", style: textBold.copyWith(fontSize: 20),),
-                        ),
-
-                      ],
-                    ),
-                  ),),
-
-
-                Expanded(
-                  child: Container(width: Get.width,
-                    decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.vertical(top: Radius.circular(40)),
-                        color: Theme.of(context).cardColor),
-                    child:  Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        const SizedBox(height:30),
-                         Row(children: [
-                          Expanded(child: StatisticsCard(count: authController.profileModel?.totalTradesCount??0, title: 'Total Trade Count',)),
-                          Expanded(child: StatisticsCard(count: authController.profileModel?.totalTradesCount??0, title: 'Total Trade Volume',)),
-
-                        ],),
-
-                        const SizedBox(height:30),
-                         Row(children: [
-                          Expanded(child: StatisticsCard(count: authController.profileModel?.equity?.toInt()??0, title: 'Equity',)),
-                          Expanded(child: StatisticsCard(count: authController.profileModel?.freeMargin?.toInt()??0, title: 'Free Margin',)),
-
-                        ],),
-
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(Dimensions.paddingSizeSmall, Dimensions.paddingSizeLarge, Dimensions.paddingSizeDefault,Dimensions.paddingSizeDefault),
-                          child: Text('My Latest Rewards', style: textMedium.copyWith(fontSize: Dimensions.fontSizeLarge),),
-                        ),
-                        SizedBox(height: 100,
-                          child: ListView.builder(
-                              itemCount: 10,
-                              padding: EdgeInsets.zero,
-                              scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index){
-                                return const SizedBox(width: 270,child: RewardCard());
-
-                              }),
-                        ),
-
-                        const SizedBox(height: Dimensions.paddingSizeDefault,),
-                        Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
-                          decoration: BoxDecoration(
+                      Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                        decoration: BoxDecoration(
                             color: Theme.of(context).cardColor,
                             borderRadius: BorderRadius.circular(5),
                             boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.5), blurRadius: 1, spreadRadius: 1, offset: const Offset(1,1))]
                         ),
-                          child: InkWell(onTap: ()=> Get.find<AuthController>().clearSharedData(),
-                            child: Row(
-                              children: [
-                                const Icon(Icons.delete, color: Colors.red,),
+                        child: Text("Balance : ${authController.profileModel?.balance??0}", style: textBold.copyWith(fontSize: 20),),
+                      ),
 
-                                const SizedBox(width: Dimensions.paddingSizeDefault,),
-                                Text("LogOut", style: textMedium.copyWith(fontSize: Dimensions.fontSizeDefault),),
-                              ],
-                            ),
-                          ),
-                        ),
+                    ],
+                  ),),
+
+
+                Container(width: Get.width,
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.vertical(top: Radius.circular(40)),
+                      color: Theme.of(context).cardColor),
+                  child:  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                      const SizedBox(height:30),
+                       Row(children: [
+                        Expanded(child: StatisticsCard(count: authController.profileModel?.totalTradesCount??0, title: 'Total Trade Count',)),
+                        Expanded(child: StatisticsCard(count: authController.profileModel?.totalTradesCount??0, title: 'Total Trade Volume',)),
 
                       ],),
-                    ),),
-                )
+
+                      const SizedBox(height:30),
+                       Row(children: [
+                        Expanded(child: StatisticsCard(count: authController.profileModel?.equity?.toInt()??0, title: 'Equity',)),
+                        Expanded(child: StatisticsCard(count: authController.profileModel?.freeMargin?.toInt()??0, title: 'Free Margin',)),
+
+                      ],),
+
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(Dimensions.paddingSizeSmall, Dimensions.paddingSizeLarge, Dimensions.paddingSizeDefault,Dimensions.paddingSizeDefault),
+                        child: Text('Open Trades', style: textMedium.copyWith(fontSize: Dimensions.fontSizeLarge),),),
+                      ListView.builder(
+                          itemCount: 10,
+                          shrinkWrap: true,
+                          padding: EdgeInsets.zero,
+                          physics: const NeverScrollableScrollPhysics(),
+                          itemBuilder: (context, index){
+                            return const SizedBox(width: 270,child: RewardCard());
+
+                          }),
+
+                      const SizedBox(height: Dimensions.paddingSizeDefault,),
+                      Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).cardColor,
+                          borderRadius: BorderRadius.circular(5),
+                          boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.5), blurRadius: 1, spreadRadius: 1, offset: const Offset(1,1))]
+                      ),
+                        child: InkWell(onTap: ()=> Get.find<AuthController>().clearSharedData(),
+                          child: Row(
+                            children: [
+                              const Icon(Icons.delete, color: Colors.red,),
+
+                              const SizedBox(width: Dimensions.paddingSizeDefault,),
+                              Text("LogOut", style: textMedium.copyWith(fontSize: Dimensions.fontSizeDefault),),
+                            ],
+                          ),
+                        ),
+                      ),
+
+                    ],),
+                  ),)
 
 
               ],),
-
-
-            ],
-          );
-        }
+            );
+          }
+        ),
       ),
     );
   }

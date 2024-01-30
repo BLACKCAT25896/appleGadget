@@ -1,15 +1,15 @@
 class TradeModel {
   double? currentPrice;
-  Null? comment;
+  String? comment;
   int? digits;
   int? login;
   double? openPrice;
   String? openTime;
   double? profit;
-  int? sl;
-  int? swaps;
+  double? sl;
+  double? swaps;
   String? symbol;
-  int? tp;
+  double? tp;
   int? ticket;
   int? type;
   double? volume;
@@ -38,10 +38,10 @@ class TradeModel {
     openPrice = json['openPrice'];
     openTime = json['openTime'];
     profit = json['profit'];
-    sl = json['sl'];
-    swaps = json['swaps'];
+    sl = json['sl'].toDouble();
+    swaps = json['swaps'].toDouble();
     symbol = json['symbol'];
-    tp = json['tp'];
+    tp = json['tp'].toDouble();
     ticket = json['ticket'];
     type = json['type'];
     volume = json['volume'];

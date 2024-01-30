@@ -1,6 +1,7 @@
 import 'package:flutter_boilerplate/common/widget/custom_snackbar.dart';
 import 'package:flutter_boilerplate/data/api_checker.dart';
 import 'package:flutter_boilerplate/feature/home/model/profine_model.dart';
+import 'package:flutter_boilerplate/feature/home/model/trade_model.dart';
 import 'package:flutter_boilerplate/feature/home/view/home_screen_view.dart';
 import 'package:flutter_boilerplate/feature/login/login_repository.dart';
 import 'package:flutter_boilerplate/feature/login/login_screen.dart';
@@ -53,12 +54,19 @@ class AuthController extends GetxController implements GetxService {
 
   }
 
+
+  double profit = 0;
+  List<TradeModel> tradeList = [];
   Future<void> getOpenTrades() async {
     _isLoading = true;
     update();
     Response? response = await authRepo.getOpenTrades(phone: getUserNumber(), token: getUserToken());
     if(response!.statusCode == 200){
-
+      profit = 0;
+      response.body.forEach((trade) => tradeList.add(TradeModel.fromJson(trade)));
+      for(int i = 0; i< tradeList.length; i++){
+        profit += tradeList[i].profit ?? 0;
+      }
     }else{
       _isLoading = false;
       ApiChecker.checkApi(response);

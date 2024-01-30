@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_boilerplate/feature/home/model/trade_model.dart';
 import 'package:flutter_boilerplate/feature/login/login_controller.dart';
 import 'package:flutter_boilerplate/util/dimensions.dart';
 import 'package:flutter_boilerplate/util/styles.dart';
@@ -55,13 +56,32 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                       Text(authController.profileModel?.city??'', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
                       Text(authController.profileModel?.country??'', style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).cardColor),),
 
-                      Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
-                        decoration: BoxDecoration(
-                            color: Theme.of(context).cardColor,
-                            borderRadius: BorderRadius.circular(5),
-                            boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.5), blurRadius: 1, spreadRadius: 1, offset: const Offset(1,1))]
+                      Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: Row(children: [
+                            Expanded(
+                              child: Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                                decoration: BoxDecoration(
+                                    color: Theme.of(context).cardColor,
+                                    borderRadius: BorderRadius.circular(5),
+                                    boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.5), blurRadius: 1, spreadRadius: 1, offset: const Offset(1,1))]
+                                ),
+                                child: Center(child: Text("Balance : ${authController.profileModel?.balance??0}", style: textMedium.copyWith(fontSize: Dimensions.fontSizeLarge),)),
+                              ),
+                            ),
+                            const SizedBox(width: 20),
+                            Expanded(
+                              child: Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                                decoration: BoxDecoration(
+                                    color: authController.profit>0? Theme.of(context).primaryColor : Theme.of(context).colorScheme.error,
+                                    borderRadius: BorderRadius.circular(5),
+                                    boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.5), blurRadius: 1, spreadRadius: 1, offset: const Offset(1,1))]
+                                ),
+                                child: Center(child: Text("Profit : ${authController.profit}", style: textMedium.copyWith(fontSize: Dimensions.fontSizeLarge, color: Colors.white),)),
+                              ),
+                            ),
+                          ],
                         ),
-                        child: Text("Balance : ${authController.profileModel?.balance??0}", style: textBold.copyWith(fontSize: 20),),
                       ),
 
                     ],
@@ -93,12 +113,12 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         padding: const EdgeInsets.fromLTRB(Dimensions.paddingSizeSmall, Dimensions.paddingSizeLarge, Dimensions.paddingSizeDefault,Dimensions.paddingSizeDefault),
                         child: Text('Open Trades', style: textMedium.copyWith(fontSize: Dimensions.fontSizeLarge),),),
                       ListView.builder(
-                          itemCount: 10,
+                          itemCount: authController.tradeList.length,
                           shrinkWrap: true,
                           padding: EdgeInsets.zero,
                           physics: const NeverScrollableScrollPhysics(),
                           itemBuilder: (context, index){
-                            return const SizedBox(width: 270,child: RewardCard());
+                            return SizedBox(width: 270,child: RewardCard(tradeModel: authController.tradeList[index],));
 
                           }),
 
@@ -162,31 +182,33 @@ class StatisticsCard extends StatelessWidget {
 }
 
 class RewardCard extends StatelessWidget {
-  const RewardCard({Key? key}) : super(key: key);
+  final TradeModel tradeModel;
+  const RewardCard({Key? key, required this.tradeModel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
+      child: Container(padding: EdgeInsets.all(Dimensions.paddingSizeDefault),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
           color: Theme.of(context).cardColor,
           boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.25), blurRadius: 1, spreadRadius: 1, offset: const Offset(0,0))]),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start, children: [
-          Padding(padding: const EdgeInsets.all(5.0),
-            child: Container(height: 90,width: 90,
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: const Color(0xff2e3075)
-                ),
-                child: const Icon(Icons.card_giftcard,color: Colors.white,  size: 50,)),
-          ),
-          const SizedBox(width : 10),
+        child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+
           Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start,mainAxisSize: MainAxisSize.min,
             children: [
-              Text('3 days ago',
-                  style: textRegular.copyWith(color: Theme.of(context).hintColor, fontSize: Dimensions.fontSizeSmall),textAlign: TextAlign.start),
+              Text('Open Price : ${tradeModel.openPrice}',
+                  style: textRegular.copyWith( fontSize: Dimensions.fontSizeLarge),textAlign: TextAlign.start),
 
-              Text('First Step Made',
+              Text('Profit : ${tradeModel.profit}',
                   style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge),textAlign: TextAlign.start),
+
+
+              Text('Volume : ${tradeModel.volume}',
+                  style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge),textAlign: TextAlign.start),
+
+              Text('Current Price : ${tradeModel.currentPrice}',
+                  style: textRegular.copyWith(fontSize: Dimensions.fontSizeLarge),textAlign: TextAlign.start),
+
 
             ],
           ))

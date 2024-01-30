@@ -73,7 +73,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                             Expanded(
                               child: Container(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
                                 decoration: BoxDecoration(
-                                    color: authController.profit>0? Theme.of(context).primaryColor : Theme.of(context).colorScheme.error,
+                                    color: authController.profit>0? Colors.green : Theme.of(context).colorScheme.error,
                                     borderRadius: BorderRadius.circular(5),
                                     boxShadow: [BoxShadow(color: Theme.of(context).hintColor.withOpacity(.5), blurRadius: 1, spreadRadius: 1, offset: const Offset(1,1))]
                                 ),

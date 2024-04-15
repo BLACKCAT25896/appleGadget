@@ -11,7 +11,7 @@ class EmptyListed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
-      child: Container(child: Column(
+      child: Column(
         children: [
           Column(children: [
 
@@ -26,7 +26,7 @@ class EmptyListed extends StatelessWidget {
           ],),
           CustomButton(buttonText: "post".tr,onPressed: (){},),
         ],
-      ),),
+      ),
     );
   }
 }

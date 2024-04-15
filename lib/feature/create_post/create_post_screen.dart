@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bikrify/common/widget/app_bar_widget.dart';
-import 'package:bikrify/feature/create_post/models/adTypeModel.dart';
+import 'package:bikrify/feature/create_post/models/ad_type_model.dart';
 import 'package:bikrify/feature/create_post/widgets/ad_type_card.dart';
 import 'package:bikrify/feature/create_post/widgets/category_bottom_sheet.dart';
 import 'package:bikrify/feature/create_post/widgets/look_for_property_rent.dart';

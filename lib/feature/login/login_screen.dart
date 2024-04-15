@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bikrify/common/widget/app_bar_widget.dart';
 import 'package:bikrify/common/widget/custom_button.dart';
 import 'package:bikrify/common/widget/custom_snackbar.dart';
 import 'package:bikrify/common/widget/custom_textfield.dart';
@@ -7,7 +6,6 @@ import 'package:bikrify/common/widget/have_or_not_widgets.dart';
 import 'package:bikrify/feature/login/login_controller.dart';
 import 'package:bikrify/helper/route_helper.dart';
 import 'package:bikrify/util/app_constants.dart';
-import 'package:bikrify/util/custom_style.dart';
 import 'package:bikrify/util/dimensions.dart';
 import 'package:bikrify/util/images.dart';
 import 'package:get/get.dart';
@@ -73,16 +71,16 @@ class LoginScreenState extends State<LoginScreen> {
         Expanded(child: Center(
           child: Padding(padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
-              CustomText.textF24W700PrimaryColor('hello welcome jason'),
+              const Text('hello welcome jason'),
               const SizedBox(height: 5),
-              CustomText.textF14W400TextColor("welcome_message".tr),
+              Text("welcome_message".tr),
               const SizedBox(height: 30),
-              CustomText.textF16W600TextColor("email".tr),
+              Text("email".tr),
               const SizedBox(height: 10),
               const CustomTextField(
                 hintText: "enter_email",prefixIcon: Images.email,),
               const SizedBox(height: 20),
-              CustomText.textF16W600TextColor(("password".tr)),
+              Text(("password".tr)),
               const SizedBox(height: 10),
                CustomTextField(hintText: ("enter_password".tr),
                 prefixIcon: Images.password,isPassword: true),

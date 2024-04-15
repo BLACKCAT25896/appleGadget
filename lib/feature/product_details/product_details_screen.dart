@@ -30,7 +30,7 @@ class ProductDetailsScreen extends StatelessWidget {
             ),)
         ],),)
       ],),
-      bottomNavigationBar: Container(height: 70,child: Padding(
+      bottomNavigationBar: SizedBox(height: 70,child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
         child: Row(children: [
           Expanded(child: CustomButton(buttonText: "chat", onPressed: (){},icon: Icons.chat,)),

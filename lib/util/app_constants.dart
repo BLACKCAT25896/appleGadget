@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:bikrify/common/model/language_model.dart';
-import 'package:bikrify/util/images.dart';
 
 const  dollarSymbol = '\$';
 

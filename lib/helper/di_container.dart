@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:bikrify/common/controller/localization_controller.dart';
 import 'package:bikrify/common/controller/splash_controller.dart';

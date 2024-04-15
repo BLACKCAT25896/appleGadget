@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:bikrify/common/widget/app_bar_widget.dart';
 import 'package:bikrify/feature/favorite/widgets/favorite_list.dart';

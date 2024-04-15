@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bikrify/feature/create_post/models/adTypeModel.dart';
+import 'package:bikrify/feature/create_post/models/ad_type_model.dart';
 import 'package:bikrify/util/dimensions.dart';
 import 'package:bikrify/util/styles.dart';
 import 'package:get/get.dart';

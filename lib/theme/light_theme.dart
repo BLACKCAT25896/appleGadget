@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 ThemeData darkTheme = ThemeData(
-  fontFamily: 'SFProText',
-  primaryColor: const Color(0xFF00735f),
+  fontFamily: 'Roboto',
+  primaryColor: const Color(0xFF003E47),
   brightness: Brightness.dark,
   cardColor: const Color(0xFF242424),
   hintColor: const Color(0xFF9F9F9F),
@@ -13,7 +13,7 @@ ThemeData darkTheme = ThemeData(
       primary: Color(0xFF02B8A2),
       error: Color(0xFFE84D4F),
       secondary: Color(0xFF008C7B),
-      tertiary: Color(0xFF7CCD8B),
+      tertiary: Color(0xFFE0EC53),
       tertiaryContainer: Color(0xFFC98B3E),
       secondaryContainer: Color(0xFFEE6464),
       onTertiary: Color(0xFFD9D9D9),

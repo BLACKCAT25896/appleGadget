@@ -1,12 +1,15 @@
 import 'dart:convert';
 
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_boilerplate/common/controller/localization_controller.dart';
 import 'package:flutter_boilerplate/common/controller/splash_controller.dart';
 import 'package:flutter_boilerplate/common/controller/theme_controller.dart';
 import 'package:flutter_boilerplate/common/model/language_model.dart';
 import 'package:flutter_boilerplate/data/api_client.dart';
+import 'package:flutter_boilerplate/feature/deshboard/controller/menu_controller.dart';
+import 'package:flutter_boilerplate/feature/home/controller/product_controller.dart';
 import 'package:flutter_boilerplate/feature/login/login_controller.dart';
 import 'package:flutter_boilerplate/feature/login/login_repository.dart';
 import 'package:flutter_boilerplate/util/app_constants.dart';
@@ -29,6 +32,8 @@ Future<Map<String, Map<String, String>>> init() async {
   Get.lazyPut(() => ThemeController(sharedPreferences: Get.find()));
   Get.lazyPut(() => LocalizationController(sharedPreferences: Get.find()));
   Get.lazyPut(() => AuthController(authRepo: Get.find()));
+  Get.lazyPut(() => MenuItemController());
+  Get.lazyPut(() => ProductController());
 
 
 

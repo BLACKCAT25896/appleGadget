@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           locale: localizeController.locale,
           translations: Messages(languages: languages),
           fallbackLocale: Locale(AppConstants.languages[0].languageCode, AppConstants.languages[0].countryCode),
-          initialRoute: RouteHelper.splash,
+          initialRoute: RouteHelper.dashboard,
           getPages: RouteHelper.routes,
           defaultTransition: Transition.topLevel,
           transitionDuration: const Duration(milliseconds: 500),

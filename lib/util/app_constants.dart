@@ -1,6 +1,17 @@
 
+import 'package:flutter/material.dart';
 import 'package:flutter_boilerplate/common/model/language_model.dart';
 import 'package:flutter_boilerplate/util/images.dart';
+
+const  dollarSymbol = '\$';
+
+double screenWidth(BuildContext context) {
+  return MediaQuery.of(context).size.width;
+}
+
+double screenHeight(BuildContext context) {
+  return MediaQuery.of(context).size.height;
+}
 
 class AppConstants {
   static const String appName = 'Apple Gadget';
@@ -33,8 +44,8 @@ class AppConstants {
   static const String zoneId = 'zoneId';
 
   static List<LanguageModel> languages = [
-    LanguageModel(imageUrl: Images.unitedKingdom, languageName: 'English', countryCode: 'US', languageCode: 'en'),
-    LanguageModel(imageUrl: Images.saudi, languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
+    LanguageModel(imageUrl: "", languageName: 'English', countryCode: 'US', languageCode: 'en'),
+    LanguageModel(imageUrl: "", languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
   ];
 
   static const int limitOfPickedIdentityImageNumber = 2;

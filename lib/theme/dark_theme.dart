@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 ThemeData lightTheme = ThemeData(
-    fontFamily: 'SFProText',
-    primaryColor: const Color(0xFF00A08D),
+    fontFamily: 'Roboto',
+    primaryColor: const Color(0xFF002931),
     disabledColor: const Color(0xFFBABFC4),
-    primaryColorDark: const Color(0xff007B6C),
+    primaryColorDark: const Color(0xFF002931),
     brightness: Brightness.light,
     hintColor: const Color(0xFF9F9F9F),
     cardColor: Colors.white,
@@ -11,8 +11,8 @@ ThemeData lightTheme = ThemeData(
         primary: Color(0xFFBBF9F1),
         background: Color(0xFFF3F3F3),
         error: Color(0xFFE84D4F),
-        secondary: Color(0xFF008C7B),
-        tertiary: Color(0xFF7CCD8B),
+        secondary: Color(0xFF002931),
+        tertiary: Color(0xFFE0EC53),
         tertiaryContainer: Color(0xFFC98B3E),
         secondaryContainer: Color(0xFFEE6464),
         onTertiary: Color(0xFFD9D9D9),

@@ -1,5 +1,5 @@
-import 'package:flutter_boilerplate/feature/deshboard/dashboard_screen.dart';
-import 'package:flutter_boilerplate/feature/splash_screen/splash_screen.dart';
+import 'package:bikrify/feature/deshboard/dashboard_screen.dart';
+import 'package:bikrify/feature/splash_screen/splash_screen.dart';
 import 'package:get/get.dart';
 
 

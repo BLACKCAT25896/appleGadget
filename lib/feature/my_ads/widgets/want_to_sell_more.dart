@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/widget/custom_button.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/images.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/common/widget/custom_button.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/images.dart';
+import 'package:bikrify/util/styles.dart';
 import 'package:get/get.dart';
 
 class WantToSellMore extends StatelessWidget {

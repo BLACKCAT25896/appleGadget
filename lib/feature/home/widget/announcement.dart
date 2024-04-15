@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/feature/home/model/announcement.dart';
-import 'package:flutter_boilerplate/feature/home/widget/marque_text.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
+import 'package:bikrify/feature/home/model/announcement.dart';
+import 'package:bikrify/feature/home/widget/marque_text.dart';
+import 'package:bikrify/util/dimensions.dart';
 
 
 

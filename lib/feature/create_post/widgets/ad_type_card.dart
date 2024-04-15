@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/feature/create_post/models/adTypeModel.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/feature/create_post/models/adTypeModel.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/styles.dart';
 import 'package:get/get.dart';
 
 class AdTypeCard extends StatelessWidget {

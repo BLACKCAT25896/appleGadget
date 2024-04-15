@@ -1,7 +1,7 @@
-import 'package:flutter_boilerplate/feature/chat/common/styles.dart';
-import 'package:flutter_boilerplate/feature/chat/model/user_model.dart';
+import 'package:bikrify/feature/chat/common/styles.dart';
+import 'package:bikrify/feature/chat/model/user_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/feature/chat/widget/avatar.dart';
+import 'package:bikrify/feature/chat/widget/avatar.dart';
 
 class BuildUserAvatar extends StatelessWidget {
   final User user;

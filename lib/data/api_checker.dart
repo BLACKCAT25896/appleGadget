@@ -1,6 +1,6 @@
-import 'package:flutter_boilerplate/common/widget/custom_snackbar.dart';
-import 'package:flutter_boilerplate/data/error_response.dart';
-import 'package:flutter_boilerplate/feature/login/login_controller.dart';
+import 'package:bikrify/common/widget/custom_snackbar.dart';
+import 'package:bikrify/data/error_response.dart';
+import 'package:bikrify/feature/login/login_controller.dart';
 import 'package:get/get.dart';
 
 

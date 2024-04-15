@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_boilerplate/common/widget/animated_custom_dialog.dart';
-import 'package:flutter_boilerplate/common/widget/logout_dialog.dart';
-import 'package:flutter_boilerplate/feature/deshboard/controller/menu_controller.dart';
-import 'package:flutter_boilerplate/feature/deshboard/widget/unicorn_outline_button.dart';
-import 'package:flutter_boilerplate/feature/splash_screen/splash_screen.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/images.dart';
+import 'package:bikrify/common/widget/animated_custom_dialog.dart';
+import 'package:bikrify/common/widget/logout_dialog.dart';
+import 'package:bikrify/feature/deshboard/controller/menu_controller.dart';
+import 'package:bikrify/feature/deshboard/widget/unicorn_outline_button.dart';
+import 'package:bikrify/feature/splash_screen/splash_screen.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/images.dart';
 import 'package:get/get.dart';
 
 

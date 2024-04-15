@@ -1,11 +1,11 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/widget/app_bar_widget.dart';
-import 'package:flutter_boilerplate/feature/chat/common/styles.dart';
-import 'package:flutter_boilerplate/feature/chat/model/message.dart';
-import 'package:flutter_boilerplate/feature/chat/model/user_model.dart';
-import 'package:flutter_boilerplate/feature/chat/widget/build_recent_chat.dart';
-import 'package:flutter_boilerplate/feature/chat/widget/build_user_avatar.dart';
+import 'package:bikrify/common/widget/app_bar_widget.dart';
+import 'package:bikrify/feature/chat/common/styles.dart';
+import 'package:bikrify/feature/chat/model/message.dart';
+import 'package:bikrify/feature/chat/model/user_model.dart';
+import 'package:bikrify/feature/chat/widget/build_recent_chat.dart';
+import 'package:bikrify/feature/chat/widget/build_user_avatar.dart';
 import 'package:get/get.dart';
 
 

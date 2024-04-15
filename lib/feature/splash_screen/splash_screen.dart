@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/widget/bouncy_widget.dart';
-import 'package:flutter_boilerplate/feature/home/view/home_screen_view.dart';
-import 'package:flutter_boilerplate/feature/login/login_controller.dart';
-import 'package:flutter_boilerplate/feature/login/login_screen.dart';
-import 'package:flutter_boilerplate/util/images.dart';
+import 'package:bikrify/common/widget/bouncy_widget.dart';
+import 'package:bikrify/feature/home/view/home_screen_view.dart';
+import 'package:bikrify/feature/login/login_controller.dart';
+import 'package:bikrify/feature/login/login_screen.dart';
+import 'package:bikrify/util/images.dart';
 import 'package:get/get.dart';
 
 

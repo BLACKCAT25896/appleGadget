@@ -1,4 +1,4 @@
-import 'package:flutter_boilerplate/util/images.dart';
+import 'package:bikrify/util/images.dart';
 
 class CategoryItem {
   String? _name;

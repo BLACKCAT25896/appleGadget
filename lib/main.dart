@@ -1,14 +1,14 @@
 import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/controller/localization_controller.dart';
-import 'package:flutter_boilerplate/common/controller/theme_controller.dart';
-import 'package:flutter_boilerplate/common/model/messages.dart';
-import 'package:flutter_boilerplate/helper/di_container.dart';
-import 'package:flutter_boilerplate/helper/route_helper.dart';
-import 'package:flutter_boilerplate/theme/dark_theme.dart';
-import 'package:flutter_boilerplate/theme/light_theme.dart';
-import 'package:flutter_boilerplate/util/app_constants.dart';
+import 'package:bikrify/common/controller/localization_controller.dart';
+import 'package:bikrify/common/controller/theme_controller.dart';
+import 'package:bikrify/common/model/messages.dart';
+import 'package:bikrify/helper/di_container.dart';
+import 'package:bikrify/helper/route_helper.dart';
+import 'package:bikrify/theme/dark_theme.dart';
+import 'package:bikrify/theme/light_theme.dart';
+import 'package:bikrify/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:url_strategy/url_strategy.dart';
 

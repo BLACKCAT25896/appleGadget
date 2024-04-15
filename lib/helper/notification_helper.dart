@@ -2,7 +2,7 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_boilerplate/util/app_constants.dart';
+import 'package:bikrify/util/app_constants.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';

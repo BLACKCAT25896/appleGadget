@@ -1,4 +1,4 @@
-import 'package:flutter_boilerplate/feature/home/domain/repo/home_repo_interface.dart';
+import 'package:bikrify/feature/home/domain/repo/home_repo_interface.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 
 class BannerRepo implements HomeRepoInterface{

@@ -1,5 +1,5 @@
-import 'package:flutter_boilerplate/feature/chat/common/styles.dart';
-import 'package:flutter_boilerplate/feature/chat/widget/online_indicator.dart';
+import 'package:bikrify/feature/chat/common/styles.dart';
+import 'package:bikrify/feature/chat/widget/online_indicator.dart';
 import 'package:flutter/material.dart';
 
 class Avatar extends StatelessWidget {

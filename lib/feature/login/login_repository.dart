@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_boilerplate/data/api_client.dart';
-import 'package:flutter_boilerplate/util/app_constants.dart';
+import 'package:bikrify/data/api_client.dart';
+import 'package:bikrify/util/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

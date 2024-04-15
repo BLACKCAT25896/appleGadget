@@ -3,16 +3,16 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_boilerplate/common/controller/localization_controller.dart';
-import 'package:flutter_boilerplate/common/controller/splash_controller.dart';
-import 'package:flutter_boilerplate/common/controller/theme_controller.dart';
-import 'package:flutter_boilerplate/common/model/language_model.dart';
-import 'package:flutter_boilerplate/data/api_client.dart';
-import 'package:flutter_boilerplate/feature/deshboard/controller/menu_controller.dart';
-import 'package:flutter_boilerplate/feature/home/controller/product_controller.dart';
-import 'package:flutter_boilerplate/feature/login/login_controller.dart';
-import 'package:flutter_boilerplate/feature/login/login_repository.dart';
-import 'package:flutter_boilerplate/util/app_constants.dart';
+import 'package:bikrify/common/controller/localization_controller.dart';
+import 'package:bikrify/common/controller/splash_controller.dart';
+import 'package:bikrify/common/controller/theme_controller.dart';
+import 'package:bikrify/common/model/language_model.dart';
+import 'package:bikrify/data/api_client.dart';
+import 'package:bikrify/feature/deshboard/controller/menu_controller.dart';
+import 'package:bikrify/feature/home/controller/product_controller.dart';
+import 'package:bikrify/feature/login/login_controller.dart';
+import 'package:bikrify/feature/login/login_repository.dart';
+import 'package:bikrify/util/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
 

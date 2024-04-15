@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.sixamtech" "\0"
-            VALUE "FileDescription", "flutter_boilerplate" "\0"
+            VALUE "FileDescription", "bikrify" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "flutter_boilerplate" "\0"
+            VALUE "InternalName", "bikrify" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.sixamtech. All rights reserved." "\0"
-            VALUE "OriginalFilename", "flutter_boilerplate.exe" "\0"
-            VALUE "ProductName", "flutter_boilerplate" "\0"
+            VALUE "OriginalFilename", "bikrify.exe" "\0"
+            VALUE "ProductName", "bikrify" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/model/category_model.dart';
-import 'package:flutter_boilerplate/common/widget/title_widget.dart';
-import 'package:flutter_boilerplate/feature/home/widget/category_widget.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
+import 'package:bikrify/common/model/category_model.dart';
+import 'package:bikrify/common/widget/title_widget.dart';
+import 'package:bikrify/feature/home/widget/category_widget.dart';
+import 'package:bikrify/util/dimensions.dart';
 import 'package:get/get.dart';
 
 

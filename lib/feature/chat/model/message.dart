@@ -1,4 +1,4 @@
-import 'package:flutter_boilerplate/feature/chat/model/user_model.dart';
+import 'package:bikrify/feature/chat/model/user_model.dart';
 
 class Message {
   final String content;

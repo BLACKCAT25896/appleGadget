@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/widget/custom_sliver_delegate.dart';
-import 'package:flutter_boilerplate/feature/home/model/announcement.dart';
-import 'package:flutter_boilerplate/feature/home/widget/announcement.dart';
-import 'package:flutter_boilerplate/feature/home/widget/cart_widget_home_page.dart';
-import 'package:flutter_boilerplate/feature/home/widget/category_view.dart';
-import 'package:flutter_boilerplate/feature/home/widget/recent_product.dart';
-import 'package:flutter_boilerplate/feature/home/widget/recommendation_list_view.dart';
-import 'package:flutter_boilerplate/feature/home/widget/search_widget_home_page.dart';
-import 'package:flutter_boilerplate/util/images.dart';
+import 'package:bikrify/common/widget/custom_sliver_delegate.dart';
+import 'package:bikrify/feature/home/model/announcement.dart';
+import 'package:bikrify/feature/home/widget/announcement.dart';
+import 'package:bikrify/feature/home/widget/cart_widget_home_page.dart';
+import 'package:bikrify/feature/home/widget/category_view.dart';
+import 'package:bikrify/feature/home/widget/recent_product.dart';
+import 'package:bikrify/feature/home/widget/recommendation_list_view.dart';
+import 'package:bikrify/feature/home/widget/search_widget_home_page.dart';
+import 'package:bikrify/util/images.dart';
 
 class HomeScreenView extends StatefulWidget {
   const HomeScreenView({Key? key}) : super(key: key);

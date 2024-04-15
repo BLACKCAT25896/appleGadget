@@ -1,4 +1,4 @@
-import 'package:flutter_boilerplate/feature/chat/common/styles.dart';
+import 'package:bikrify/feature/chat/common/styles.dart';
 import 'package:flutter/material.dart';
 
 class OnlineIndicator extends StatelessWidget {

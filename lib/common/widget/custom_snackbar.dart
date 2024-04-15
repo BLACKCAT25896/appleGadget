@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
+import 'package:bikrify/util/dimensions.dart';
 import 'package:get/get.dart';
 
 void showCustomSnackBar(String? message, {bool isError = true, double margin = Dimensions.paddingSizeSmall}) {

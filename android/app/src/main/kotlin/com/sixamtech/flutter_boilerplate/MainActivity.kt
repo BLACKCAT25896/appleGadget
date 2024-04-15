@@ -1,4 +1,4 @@
-package com.sixamtech.flutter_boilerplate
+package com.test.bikrify
 
 import io.flutter.embedding.android.FlutterActivity
 

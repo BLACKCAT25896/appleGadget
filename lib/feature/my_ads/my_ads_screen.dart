@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/widget/app_bar_widget.dart';
-import 'package:flutter_boilerplate/feature/favorite/widgets/favorite_list.dart';
-import 'package:flutter_boilerplate/feature/my_ads/widgets/empty_listed.dart';
-import 'package:flutter_boilerplate/feature/my_ads/widgets/types_item.dart';
-import 'package:flutter_boilerplate/feature/my_ads/widgets/want_to_sell_more.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
+import 'package:bikrify/common/widget/app_bar_widget.dart';
+import 'package:bikrify/feature/favorite/widgets/favorite_list.dart';
+import 'package:bikrify/feature/my_ads/widgets/empty_listed.dart';
+import 'package:bikrify/feature/my_ads/widgets/types_item.dart';
+import 'package:bikrify/feature/my_ads/widgets/want_to_sell_more.dart';
+import 'package:bikrify/util/dimensions.dart';
 import 'package:get/get.dart';
 
 class MyAdsScreen extends StatefulWidget {

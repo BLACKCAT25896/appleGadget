@@ -1,4 +1,4 @@
-import 'package:flutter_boilerplate/feature/home/model/product_model.dart';
+import 'package:bikrify/feature/home/model/product_model.dart';
 import 'package:get/get.dart';
 
 class ProductController extends GetxController implements GetxService {

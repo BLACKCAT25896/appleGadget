@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/feature/chat/common/styles.dart';
-import 'package:flutter_boilerplate/feature/chat/chat_screen.dart';
-import 'package:flutter_boilerplate/feature/chat/model/message.dart';
-import 'package:flutter_boilerplate/feature/chat/widget/avatar.dart';
+import 'package:bikrify/feature/chat/common/styles.dart';
+import 'package:bikrify/feature/chat/chat_screen.dart';
+import 'package:bikrify/feature/chat/model/message.dart';
+import 'package:bikrify/feature/chat/widget/avatar.dart';
 
 class BuildRecentChat extends StatelessWidget {
   final Message message;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/model/category_model.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/bottom_sheet_item_widget.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/common/model/category_model.dart';
+import 'package:bikrify/feature/create_post/widgets/bottom_sheet_item_widget.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/styles.dart';
 
 class PostJobOverAsBottomSheet extends StatelessWidget {
   const PostJobOverAsBottomSheet({super.key});

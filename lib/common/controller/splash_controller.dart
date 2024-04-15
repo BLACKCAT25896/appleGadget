@@ -1,6 +1,6 @@
-import 'package:flutter_boilerplate/common/repo/splash_repo.dart';
-import 'package:flutter_boilerplate/common/widget/custom_snackbar.dart';
-import 'package:flutter_boilerplate/data/api_checker.dart';
+import 'package:bikrify/common/repo/splash_repo.dart';
+import 'package:bikrify/common/widget/custom_snackbar.dart';
+import 'package:bikrify/data/api_checker.dart';
 import 'package:get/get.dart';
 
 class SplashController extends GetxController {

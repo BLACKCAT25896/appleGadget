@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/controller/theme_controller.dart';
-import 'package:flutter_boilerplate/common/widget/rating_bar.dart';
-import 'package:flutter_boilerplate/feature/home/model/product_model.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/common/controller/theme_controller.dart';
+import 'package:bikrify/common/widget/rating_bar.dart';
+import 'package:bikrify/feature/home/model/product_model.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/styles.dart';
 import 'package:get/get.dart';
 
 class ProductTitleView extends StatelessWidget {

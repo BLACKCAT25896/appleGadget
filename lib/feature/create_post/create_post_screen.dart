@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/widget/app_bar_widget.dart';
-import 'package:flutter_boilerplate/feature/create_post/models/adTypeModel.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/ad_type_card.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/category_bottom_sheet.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/look_for_property_rent.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/look_for_something_to_buy.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/post_job_overas.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/post_job_usa_bottom_sheet.dart';
-import 'package:flutter_boilerplate/feature/create_post/widgets/property_rent_bottom_sheet.dart';
-import 'package:flutter_boilerplate/util/images.dart';
+import 'package:bikrify/common/widget/app_bar_widget.dart';
+import 'package:bikrify/feature/create_post/models/adTypeModel.dart';
+import 'package:bikrify/feature/create_post/widgets/ad_type_card.dart';
+import 'package:bikrify/feature/create_post/widgets/category_bottom_sheet.dart';
+import 'package:bikrify/feature/create_post/widgets/look_for_property_rent.dart';
+import 'package:bikrify/feature/create_post/widgets/look_for_something_to_buy.dart';
+import 'package:bikrify/feature/create_post/widgets/post_job_overas.dart';
+import 'package:bikrify/feature/create_post/widgets/post_job_usa_bottom_sheet.dart';
+import 'package:bikrify/feature/create_post/widgets/property_rent_bottom_sheet.dart';
+import 'package:bikrify/util/images.dart';
 import 'package:get/get.dart';
 
 class CreatePostScreen extends StatefulWidget {

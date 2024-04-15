@@ -1,6 +1,6 @@
-import 'package:flutter_boilerplate/data/api_client.dart';
-import 'package:flutter_boilerplate/feature/home/domain/repo/home_repo_interface.dart';
-import 'package:flutter_boilerplate/util/app_constants.dart';
+import 'package:bikrify/data/api_client.dart';
+import 'package:bikrify/feature/home/domain/repo/home_repo_interface.dart';
+import 'package:bikrify/util/app_constants.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 
 class HomeRepo implements HomeRepoInterface{

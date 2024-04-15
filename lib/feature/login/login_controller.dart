@@ -1,10 +1,10 @@
-import 'package:flutter_boilerplate/common/widget/custom_snackbar.dart';
-import 'package:flutter_boilerplate/data/api_checker.dart';
-import 'package:flutter_boilerplate/feature/home/model/profine_model.dart';
-import 'package:flutter_boilerplate/feature/home/model/trade_model.dart';
-import 'package:flutter_boilerplate/feature/home/view/home_screen_view.dart';
-import 'package:flutter_boilerplate/feature/login/login_repository.dart';
-import 'package:flutter_boilerplate/feature/login/login_screen.dart';
+import 'package:bikrify/common/widget/custom_snackbar.dart';
+import 'package:bikrify/data/api_checker.dart';
+import 'package:bikrify/feature/home/model/profine_model.dart';
+import 'package:bikrify/feature/home/model/trade_model.dart';
+import 'package:bikrify/feature/home/view/home_screen_view.dart';
+import 'package:bikrify/feature/login/login_repository.dart';
+import 'package:bikrify/feature/login/login_screen.dart';
 import 'package:get/get.dart';
 
 

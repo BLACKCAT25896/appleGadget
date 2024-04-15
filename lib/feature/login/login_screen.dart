@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/widget/app_bar_widget.dart';
-import 'package:flutter_boilerplate/common/widget/custom_button.dart';
-import 'package:flutter_boilerplate/common/widget/custom_snackbar.dart';
-import 'package:flutter_boilerplate/common/widget/custom_textfield.dart';
-import 'package:flutter_boilerplate/common/widget/have_or_not_widgets.dart';
-import 'package:flutter_boilerplate/feature/login/login_controller.dart';
-import 'package:flutter_boilerplate/helper/route_helper.dart';
-import 'package:flutter_boilerplate/util/app_constants.dart';
-import 'package:flutter_boilerplate/util/custom_style.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/images.dart';
+import 'package:bikrify/common/widget/app_bar_widget.dart';
+import 'package:bikrify/common/widget/custom_button.dart';
+import 'package:bikrify/common/widget/custom_snackbar.dart';
+import 'package:bikrify/common/widget/custom_textfield.dart';
+import 'package:bikrify/common/widget/have_or_not_widgets.dart';
+import 'package:bikrify/feature/login/login_controller.dart';
+import 'package:bikrify/helper/route_helper.dart';
+import 'package:bikrify/util/app_constants.dart';
+import 'package:bikrify/util/custom_style.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/images.dart';
 import 'package:get/get.dart';
 
 class LoginScreen extends StatefulWidget {

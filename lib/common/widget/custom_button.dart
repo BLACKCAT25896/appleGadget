@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/styles.dart';
 
 class CustomButton extends StatelessWidget {
   final Function()? onPressed;

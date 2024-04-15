@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/feature/favorite/widgets/favorite_item.dart';
-import 'package:flutter_boilerplate/feature/home/controller/product_controller.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
+import 'package:bikrify/feature/favorite/widgets/favorite_item.dart';
+import 'package:bikrify/feature/home/controller/product_controller.dart';
+import 'package:bikrify/util/dimensions.dart';
 import 'package:get/get.dart';
 
 class FavoriteList extends StatelessWidget {

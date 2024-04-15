@@ -1,8 +1,8 @@
-import 'package:flutter_boilerplate/feature/chat/inbox_screen.dart';
-import 'package:flutter_boilerplate/feature/create_post/create_post_screen.dart';
-import 'package:flutter_boilerplate/feature/home/view/home_screen_view.dart';
-import 'package:flutter_boilerplate/feature/my_ads/my_ads_screen.dart';
-import 'package:flutter_boilerplate/feature/profile/view/profile_screen_view.dart';
+import 'package:bikrify/feature/chat/inbox_screen.dart';
+import 'package:bikrify/feature/create_post/create_post_screen.dart';
+import 'package:bikrify/feature/home/view/home_screen_view.dart';
+import 'package:bikrify/feature/my_ads/my_ads_screen.dart';
+import 'package:bikrify/feature/profile/view/profile_screen_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

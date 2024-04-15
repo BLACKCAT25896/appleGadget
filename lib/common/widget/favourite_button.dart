@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
+import 'package:bikrify/util/dimensions.dart';
 
 
 class FavouriteButton extends StatelessWidget {

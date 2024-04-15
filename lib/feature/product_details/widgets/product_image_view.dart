@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/controller/localization_controller.dart';
-import 'package:flutter_boilerplate/common/controller/theme_controller.dart';
-import 'package:flutter_boilerplate/common/widget/custom_image.dart';
-import 'package:flutter_boilerplate/common/widget/favourite_button.dart';
-import 'package:flutter_boilerplate/feature/home/controller/product_controller.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
+import 'package:bikrify/common/controller/localization_controller.dart';
+import 'package:bikrify/common/controller/theme_controller.dart';
+import 'package:bikrify/common/widget/custom_image.dart';
+import 'package:bikrify/common/widget/favourite_button.dart';
+import 'package:bikrify/feature/home/controller/product_controller.dart';
+import 'package:bikrify/util/dimensions.dart';
 import 'package:get/get.dart';
 
 

@@ -1,5 +1,5 @@
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

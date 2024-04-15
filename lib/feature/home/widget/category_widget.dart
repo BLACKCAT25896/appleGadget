@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/common/model/category_model.dart';
-import 'package:flutter_boilerplate/common/widget/custom_image.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/common/model/category_model.dart';
+import 'package:bikrify/common/widget/custom_image.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/styles.dart';
 
 
 

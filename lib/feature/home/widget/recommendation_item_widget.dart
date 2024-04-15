@@ -1,10 +1,10 @@
-import 'package:flutter_boilerplate/common/widget/custom_image.dart';
-import 'package:flutter_boilerplate/common/widget/favourite_button.dart';
-import 'package:flutter_boilerplate/feature/home/model/product_model.dart';
+import 'package:bikrify/common/widget/custom_image.dart';
+import 'package:bikrify/common/widget/favourite_button.dart';
+import 'package:bikrify/feature/home/model/product_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/feature/product_details/product_details_screen.dart';
-import 'package:flutter_boilerplate/util/dimensions.dart';
-import 'package:flutter_boilerplate/util/styles.dart';
+import 'package:bikrify/feature/product_details/product_details_screen.dart';
+import 'package:bikrify/util/dimensions.dart';
+import 'package:bikrify/util/styles.dart';
 import 'package:get/get.dart';
 
 class RecommendationItem extends StatefulWidget {
